@@ -10,7 +10,7 @@ import image8 from "../../assets/m6.jpg";
 import image9 from "../../assets/m9.jpg";
 import image10 from "../../assets/m10.jpg";
 
-const images = [image1, image2, image3, image4, image5, image6,image7,image8,image9,image10];
+const images = [image6,image7,image8,image9,image10,image5];
 
 function Media() {
   return (

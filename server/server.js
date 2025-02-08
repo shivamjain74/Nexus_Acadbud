@@ -1,3 +1,5 @@
+require ("dotenv").config();
+
 const express = require('express');
 const mongoose = require('mongoose'); 
 const cookieParser = require('cookie-parser');
@@ -23,7 +25,7 @@ const PORT= process.env.PORT || 5000;
 
 // connect() method returns a promise
 mongoose.connect(
-    "mongodb://localhost:27017"             // connected through MongoDB compass 
+     process.env.MONGO_URL            // connected through MongoDB compass 
   )
     .then(()=>console.log('MongoDB is Connected Successfully.....'))
     .catch((error) => console.log('Connection error: ', error));
